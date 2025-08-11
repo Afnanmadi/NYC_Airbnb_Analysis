@@ -1,13 +1,10 @@
-
-# NYC Airbnb Data Analysis
+# 🏙️ New York City Airbnb Data Analysis
 
 ## 📌 Project Overview
-This project analyzes the **New York City Airbnb Open Data** to uncover insights about listings, pricing, availability, and reviews.  
-It applies **data cleaning, exploratory data analysis, and visualization** techniques to answer the research question:  
-**"How does the number of reviews relate to price, availability, and other listing features?"**
+This project analyzes the **New York City Airbnb Open Data** to uncover insights about pricing, availability, and customer engagement.  
+It involves **data cleaning**, **exploratory data analysis (EDA)**, **advanced analysis**, and **visualization** using Python.  
+The goal is to explore how factors like **number of reviews**, **price**, and **availability** relate to each other and to identify patterns in the NYC Airbnb market.
 
-The analysis uses **Python**, **Pandas**, **Matplotlib**, and **Seaborn** for data processing and visualization.  
-Findings are presented in a detailed **report**.
 ---
 
 ## 📂 Repository Structure
@@ -16,48 +13,63 @@ NYC_Airbnb_Analysis/
 │── Dataset.csv                               # Airbnb dataset used for analysis
 │── nyc_airbnb.py                             # Python script for analysis
 │── New York City Airbnb Data Analysis Report.pdf   # Detailed project report (PDF format)
-│── README.md                                 # Project documentation
+```
 
 ---
 
-## 🛠 Installation & Requirements
+## 🛠️ Tools & Libraries Used
+- **Python** (Pandas, NumPy, Matplotlib, Seaborn)  
+- **Jupyter/VS Code** for development  
+- **MS Word / PDF** for project report  
 
-### 1️⃣ Clone the Repository
+---
+
+## 📊 Key Analysis Steps
+1. **Data Cleaning**  
+   - Checked for missing values and handled them appropriately.  
+   - Detected and treated outliers using IQR.  
+
+2. **Exploratory Data Analysis (EDA)**  
+   - Scatter plots for relationships between `number_of_reviews`, `price`, and `availability_365`.  
+   - Histograms and boxplots for distribution insights.  
+   - Grouped analysis by `room_type` and `neighbourhood_group`.  
+
+3. **Advanced Analysis**  
+   - Applied statistical correlation analysis.  
+   - Investigated patterns across different neighborhoods.  
+
+4. **Visualization**  
+   - Created clear and visually appealing charts using Matplotlib & Seaborn.  
+
+---
+
+## 📌 Key Insights
+- Certain neighborhoods and room types have significantly higher average prices.  
+- Listings with **moderate pricing** tend to receive more reviews.  
+- Seasonal availability plays a role in price variations.  
+
+---
+
+## 📑 Files Description
+- **Dataset.csv** – Source dataset from [Kaggle](https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data).  
+- **nyc_airbnb.py** – Main Python analysis script.  
+- **New York City Airbnb Data Analysis Report.docx / .pdf** – Full report with detailed analysis and visualizations.  
+
+---
+
+## 🚀 How to Run the Project
 ```bash
-git clone https://github.com/your-username/NYC_Airbnb_Analysis.git
+# Clone the repository
+git clone (https://github.com/Afnanmadi/NYC_Airbnb_Analysis)
+
+# Navigate to the project folder
 cd NYC_Airbnb_Analysis
-```
 
-### 2️⃣ Install Dependencies
-Make sure you have Python 3.x installed, then run:
-```bash
-pip install pandas matplotlib seaborn
-```
+# Install required libraries
+pip install pandas numpy matplotlib seaborn
 
----
-
-## 🚀 Usage
-
-### Run the Analysis
-```bash
-python nyc_airbnb.py
-```
-
-The script will:
-- Load and clean the dataset
-- Perform exploratory data analysis
-- Create visualizations of price, reviews, and availability patterns
-
-### View Reports 
-- **Report (PDF/Word)**: Detailed methodology, analysis, and conclusions  
-
----
-
-## 📊 Key Insights
-- Relationship between **number of reviews**, **price**, and **availability**  
-- Popular room types and neighborhoods in NYC  
-- Distribution of prices and review patterns  
-- Seasonal and location-based trends  
+# Run the analysis script
+python nyc_airbnb.py   
 
 ---
 
