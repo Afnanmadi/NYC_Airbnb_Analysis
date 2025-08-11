@@ -15,6 +15,7 @@ NYC_Airbnb_Analysis/
 │── New York City Airbnb Data Analysis Report.pdf   # Detailed project report (PDF format)
 ```
 
+
 ---
 
 ## 🛠️ Tools & Libraries Used
@@ -60,7 +61,7 @@ NYC_Airbnb_Analysis/
 ## 🚀 How to Run the Project
 ```bash
 # Clone the repository
-git clone (https://github.com/Afnanmadi/NYC_Airbnb_Analysis)
+git clone https://github.com/YourUsername/NYC_Airbnb_Analysis.git
 
 # Navigate to the project folder
 cd NYC_Airbnb_Analysis
@@ -69,31 +70,34 @@ cd NYC_Airbnb_Analysis
 pip install pandas numpy matplotlib seaborn
 
 # Run the analysis script
-python nyc_airbnb.py   
+python nyc_airbnb.py.
+
+````
 
 ---
 
 ## 📷 Example Visualizations
 
+1. **Price vs. Number of Reviews** <img width="1228" height="878" alt="image" src="https://github.com/user-attachments/assets/17c3b15a-142f-43f5-84cf-a1db6c1717d5" />
 
-1. **Price vs. Number of Reviews**
-   <img width="1228" height="878" alt="image" src="https://github.com/user-attachments/assets/17c3b15a-142f-43f5-84cf-a1db6c1717d5" />
+2. **Average Availability by Room Type** <img width="1266" height="896" alt="image" src="https://github.com/user-attachments/assets/6df6b816-29e6-4c76-b247-9d27170161e2" />
 
-3. **Average Availability by Room Type**
+3. **Top Neighborhoods by Listings** <img width="1181" height="834" alt="image" src="https://github.com/user-attachments/assets/04f27f83-af8c-4cec-86a5-c50d96b31b06" />
 
-   <img width="1266" height="896" alt="image" src="https://github.com/user-attachments/assets/6df6b816-29e6-4c76-b247-9d27170161e2" />
-
-5. **Top Neighborhoods by Listings**
-<img width="1181" height="834" alt="image" src="https://github.com/user-attachments/assets/04f27f83-af8c-4cec-86a5-c50d96b31b06" />
-
----    
+---
 
 ## 📜 License
+
 This project is licensed under the MIT License.
 
 ---
 
 ## ✍️ Author
-**AFNAN MADI**  
-Business Intelligence Analyst | Data Enthusiast  
+
+**AFNAN MADI**
+Business Intelligence Analyst | Data Enthusiast
 [LinkedIn](https://www.linkedin.com/in/afnan-madi) | [GitHub](https://github.com/Afnanmadi/NYC_Airbnb_Analysis)
+
+```
+
+
