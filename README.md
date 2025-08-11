@@ -1,141 +1,86 @@
-# NYC_Airbnb_Analysis
 
-End-to-end analysis of the **New York City Airbnb Open Data** to explore how the **number of reviews** relates to **price**, **availability**, and listing features. This project covers **data cleaning**, **EDA**, **visualization**, and a light **predictive exploration**, delivered in a reproducible Python workflow.
+# NYC Airbnb Data Analysis
 
-> **Goal:** Translate raw Airbnb data into clear, decision-ready insights and visuals.
+## 📌 Project Overview
+This project analyzes the **New York City Airbnb Open Data** to uncover insights about listings, pricing, availability, and reviews.  
+It applies **data cleaning, exploratory data analysis, and visualization** techniques to answer the research question:  
+**"How does the number of reviews relate to price, availability, and other listing features?"**
 
----
-
-## 🔍 Key Questions
-1. How does **number_of_reviews** relate to **price** and **availability_365**?
-2. Do relationships differ by **room_type** or **neighbourhood_group**?
-3. What outliers exist (e.g., extreme prices) and how do they affect insights?
+The analysis uses **Python**, **Pandas**, **Matplotlib**, and **Seaborn** for data processing and visualization.  
+Findings are presented in a detailed **report** and a **presentation**.
 
 ---
 
-## 🧰 Tech Stack
-- **Python**: `pandas`, `numpy`
-- **Visualization**: `matplotlib`, `seaborn`
-- **Environment**: Jupyter / Google Colab
-
----
-
-## 📦 Project Structure
+## 📂 Repository Structure
 ```
 NYC_Airbnb_Analysis/
-├─ data/
-│  └─ AB_NYC_2019.csv           # (add locally or access via Kaggle link)
-├─ notebooks/
-│  └─ 01_nyc_airbnb_eda.ipynb   # cleaning + EDA + visuals
-├─ src/
-│  ├─ cleaning.py               # helper functions for NA/outliers
-│  └─ viz.py                    # helper functions for charts
-├─ outputs/
-│  ├─ figures/                  # exported charts
-│  └─ summary/                  # brief findings (md/pdf)
-├─ README.md
-└─ requirements.txt
+│── Dataset.csv                               # Airbnb dataset used for analysis
+│── nyc_airbnb.py                             # Python script for analysis
+│── New York City Airbnb Data Analysis Report.docx  # Detailed project report (Word format)
+│── New York City Airbnb Data Analysis Report.pdf   # Detailed project report (PDF format)
+│── New_york_city_Airbnb_Analysis_Presentation.pptx # Project presentation slides
+│── README.md                                 # Project documentation
 ```
 
-> You can start with just `notebooks/01_nyc_airbnb_eda.ipynb` and add `/src` helpers later.
-
 ---
 
-## 🗂 Dataset
-- **Source:** Kaggle – NYC Airbnb Open Data: https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data
-- **File:** `AB_NYC_2019.csv`
-- **Key fields:** `price`, `availability_365`, `number_of_reviews`, `room_type`, `neighbourhood_group`, `latitude`, `longitude`
+## 🛠 Installation & Requirements
 
-> **Note:** Do not commit large/raw data. Keep it local or add to `.gitignore`.
-
----
-
-## ⚙️ Setup & Run
-
-### 1) Create environment
+### 1️⃣ Clone the Repository
 ```bash
-python -m venv .venv
-# Windows: .venv\Scripts\activate
-# Mac/Linux:
-source .venv/bin/activate
+git clone https://github.com/your-username/NYC_Airbnb_Analysis.git
+cd NYC_Airbnb_Analysis
 ```
 
-### 2) Install dependencies
+### 2️⃣ Install Dependencies
+Make sure you have Python 3.x installed, then run:
 ```bash
-pip install -r requirements.txt
+pip install pandas matplotlib seaborn
 ```
 
-**requirements.txt**
-```
-pandas
-numpy
-matplotlib
-seaborn
-jupyter
-```
+---
 
-### 3) Launch notebook
+## 🚀 Usage
+
+### Run the Analysis
 ```bash
-jupyter notebook notebooks/01_nyc_airbnb_eda.ipynb
+python nyc_airbnb.py
 ```
 
----
+The script will:
+- Load and clean the dataset
+- Perform exploratory data analysis
+- Create visualizations of price, reviews, and availability patterns
 
-## 🔧 Methodology
-
-### A. Data Cleaning
-- Inspect structure with `df.info()` / `df.describe()`
-- Handle missing values (drop or `fillna` as appropriate)
-- Detect & treat outliers (e.g., IQR on `price`)
-- Type casting (dates/numerics if needed)
-
-### B. Exploratory Analysis
-- Descriptive stats for `price`, `number_of_reviews`, `availability_365`
-- Correlations and pairwise relationships
-- Grouped comparisons by `room_type` and `neighbourhood_group`
-
-### C. Visualization
-- **Scatter plots**: reviews vs price / availability
-- **Boxplots**: price by room type / neighbourhood group
-- **Histograms**: distributions of key metrics
-- **Heatmaps** (optional): correlations
-
-### D. (Optional) Predictive Exploration
-- Simple baseline regressions or trend lines to check associations
-- Clear caveats: correlation ≠ causation
+### View Reports & Presentations
+- **Report (PDF/Word)**: Detailed methodology, analysis, and conclusions  
+- **Presentation (PPTX)**: Visual summary of findings
 
 ---
 
-## 📊 Key Findings (Template – replace with your results)
-- Listings with **moderate prices** tend to receive **more reviews** than very high-priced listings.
-- **Entire home/apt** listings are **higher-priced** but often have **fewer reviews** than private rooms.
-- Some neighbourhood groups show **distinct price bands** and **review volumes**.
-- Outliers (e.g., extreme prices) can distort averages; trimming improves stability.
-
-> Add 1–2 screenshots of your charts in `outputs/figures/` and embed below.
+## 📊 Key Insights
+- Relationship between **number of reviews**, **price**, and **availability**  
+- Popular room types and neighborhoods in NYC  
+- Distribution of prices and review patterns  
+- Seasonal and location-based trends  
 
 ---
 
-## 🖼 Example Visuals (add your images)
-```markdown
-![Scatter: Reviews vs Price](outputs/figures/reviews_vs_price.png)
-![Boxplot: Price by Room Type](outputs/figures/price_by_room_type.png)
-```
+## 📷 Example Visualizations
+(You can replace these placeholders with actual screenshots from the presentation)
+
+1. **Price vs. Number of Reviews**
+2. **Average Availability by Room Type**
+3. **Top Neighborhoods by Listings**
 
 ---
 
-## 🧭 Reproducibility Notes
-- Random seeds (if used) should be fixed for repeatable results.
-- Document thresholds used for outlier handling (e.g., 1.5×IQR).
+## 📜 License
+This project is licensed under the MIT License.
 
 ---
 
-## 📜 Ethics & Limits
-- Findings describe **associations**, not causation.
-- Prices and reviews are influenced by seasonality, marketing, and host behavior not captured here.
-
----
-
-## 📣 Acknowledgments
-- Dataset: **Kaggle – NYC Airbnb Open Data**
-- Coursework: **Willis College – Business Intelligence Analysis**
+## ✍️ Author
+**Your Name**  
+Business Intelligence Analyst | Data Enthusiast  
+[LinkedIn](https://www.linkedin.com/) | [GitHub](https://github.com/your-username)
