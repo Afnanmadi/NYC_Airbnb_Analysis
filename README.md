@@ -7,8 +7,7 @@ It applies **data cleaning, exploratory data analysis, and visualization** techn
 **"How does the number of reviews relate to price, availability, and other listing features?"**
 
 The analysis uses **Python**, **Pandas**, **Matplotlib**, and **Seaborn** for data processing and visualization.  
-Findings are presented in a detailed **report** and a **presentation**.
-
+Findings are presented in a detailed **report**.
 ---
 
 ## 📂 Repository Structure
@@ -16,11 +15,8 @@ Findings are presented in a detailed **report** and a **presentation**.
 NYC_Airbnb_Analysis/
 │── Dataset.csv                               # Airbnb dataset used for analysis
 │── nyc_airbnb.py                             # Python script for analysis
-│── New York City Airbnb Data Analysis Report.docx  # Detailed project report (Word format)
 │── New York City Airbnb Data Analysis Report.pdf   # Detailed project report (PDF format)
-│── New_york_city_Airbnb_Analysis_Presentation.pptx # Project presentation slides
 │── README.md                                 # Project documentation
-```
 
 ---
 
@@ -52,9 +48,8 @@ The script will:
 - Perform exploratory data analysis
 - Create visualizations of price, reviews, and availability patterns
 
-### View Reports & Presentations
+### View Reports 
 - **Report (PDF/Word)**: Detailed methodology, analysis, and conclusions  
-- **Presentation (PPTX)**: Visual summary of findings
 
 ---
 
@@ -67,13 +62,19 @@ The script will:
 ---
 
 ## 📷 Example Visualizations
-(You can replace these placeholders with actual screenshots from the presentation)
+
 
 1. **Price vs. Number of Reviews**
-2. **Average Availability by Room Type**
-3. **Top Neighborhoods by Listings**
+   <img width="1228" height="878" alt="image" src="https://github.com/user-attachments/assets/17c3b15a-142f-43f5-84cf-a1db6c1717d5" />
 
----
+3. **Average Availability by Room Type**
+
+   <img width="1266" height="896" alt="image" src="https://github.com/user-attachments/assets/6df6b816-29e6-4c76-b247-9d27170161e2" />
+
+5. **Top Neighborhoods by Listings**
+<img width="1181" height="834" alt="image" src="https://github.com/user-attachments/assets/04f27f83-af8c-4cec-86a5-c50d96b31b06" />
+
+---    
 
 ## 📜 License
 This project is licensed under the MIT License.
@@ -81,6 +82,6 @@ This project is licensed under the MIT License.
 ---
 
 ## ✍️ Author
-**Your Name**  
+**AFNAN MADI**  
 Business Intelligence Analyst | Data Enthusiast  
-[LinkedIn](https://www.linkedin.com/) | [GitHub](https://github.com/your-username)
+[LinkedIn](https://www.linkedin.com/in/afnan-madi) | [GitHub](https://github.com/Afnanmadi/NYC_Airbnb_Analysis)
